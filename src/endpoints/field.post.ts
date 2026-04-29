@@ -1,4 +1,4 @@
-import Generator from '@nuxtus/generator'
+import Generator from '@resultcrafter/nuxtus-generator'
 
 export default async (_event) => {
   if (process.env.NODE_ENV !== 'production') {
