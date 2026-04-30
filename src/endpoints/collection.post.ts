@@ -1,4 +1,4 @@
-import Generator from '@resultcrafter/nuxtus-generator'
+import Generator from '@nuxtus/generator'
 import { readBody } from 'h3'
 
 async function deleteCollection (event) {
