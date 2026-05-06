@@ -1,7 +1,7 @@
 {
   "name": "@resultcrafter/nuxtus-nuxt-module",
   "description": "Nuxt module for automation between Nuxt and Directus.",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "license": "MIT",
   "author": "Craig Harman",
   "repository": {
@@ -30,7 +30,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@directus/sdk": "^21.0.0",
+    "@directus/sdk": "^21.2.0",
     "@nuxt/kit": "^3.10.3",
     "@resultcrafter/nuxtus-generator": "^1.9.5",
     "h3": "1.15.9"
