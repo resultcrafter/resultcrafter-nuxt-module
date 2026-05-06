@@ -16,8 +16,7 @@ import { createError, defineNuxtPlugin, useRuntimeConfig } from "#app";
 import type { NuxtError } from "#app";
 import type { Ref } from "vue";
 
-// TODO: Import schema from ../interfaces/nuxtus.ts?
-type Schema = Record<string, never>;
+type Schema = Record<string, any>;
 
 declare module "nuxt/schema" {
   interface RuntimeConfig {
@@ -70,7 +69,7 @@ export default defineNuxtPlugin((_nuxtApp) => {
       ) as DirectusRestToken;
   }
 
-  function checkError(error: Ref<NuxtError<unknown> | null>): void {
+  function checkError(error: Ref<NuxtError<unknown> | null | undefined>): void {
     if (error.value) {
       throw createError({
         statusCode: error.value.statusCode,
